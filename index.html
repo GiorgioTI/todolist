@@ -1,0 +1,84 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @GiorgioTI
+ Watch 3
+  Star 3
+  Fork 2 senai-sp/multiplataforma
+ Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs
+Branch: master Find file Copy pathmultiplataforma/Git/index.html
+92fd9d4  an hour ago
+@kevindantas kevindantas Add files via upload
+1 contributor
+RawBlameHistory     66 lines (56 sloc)  2.08 KB
+<!--  
+    +-----------------------------------------------------------+  
+    |               Escola SENAI de Informática                 |
+    |                  Endeavor & J.P. Morgan                   |
+    |    Curso de Desenvolvedor Multiplataforma Web & Mobile    |
+    |               Desafio JavaScript TODO List                |
+    |           Aluno:  Victor Rubens da Silva Santos           |
+    |                   Equipe: Trade Force                     | 
+    +-----------------------------------------------------------+   
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="assets/main.css">
+      
+      <script type="text/javascript" src="tarefas.json"></script>
+      <script type="text/javascript" src="script.js"></script>
+      <title>Desafio FrontEnd - TodoList</title>
+  </head>
+  <body onload="readJSON();">
+    <!-- APP -->
+  	<div id="app">
+      <!-- NAV -->
+  		<nav>
+  			<ul class="tabs">
+  				<li class="active" onclick="clickNaoFeitas()" id="tabNaoFeitas"><a  href="#" data-tabindex="0" title="NÃO FEITAS">NÃO FEITAS</a></li>
+  				<li onclick="clickFeitas()" id="tabFeitas"><a href="#"  data-tabindex="1" title="FEITAS">FEITAS</a></li>
+  			</ul>
+  		</nav>
+      <!-- END NAV -->
+
+      <!-- CONTEUDOTAB -->
+  		<div id="conteudoTab">
+        <!-- NAOFEITAS -->
+  			<section id="naoFeitas" class="active">
+  				<ul id="ListNaoFeitas">
+            
+        
+          </ul>
+  				<div id="formAdicionarTarefa" >
+  					<textarea name="descricao" id="txtDescricao" onkeyup="contaCaracter()"  placeholder="Insira uma tarefa"></textarea>
+  					<button onclick="addTask()" >Adicionar</button>
+  					<span id="erro"></span>
+  					<span id="contador">140</span>
+  				</div>
+  			</section>
+        <!-- END NAOFEITAS -->
+
+        <!-- FEITAS -->
+  			<section id="feitas">
+  				<ul id="ListFeitas">
+           
+          </ul>
+  			</section>
+        <!-- END FEITAS -->
+  		</div>
+      <!-- END CONTEUDOTAB -->
+
+  	</div>
+    <!-- END APP -->
+
+    
+  </body>
+</html>
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help
